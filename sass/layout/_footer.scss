@@ -1,0 +1,46 @@
+.footer {
+  padding: 4.8rem 0;
+  background-color: $color-dark-green;
+  min-height: 16.9rem;
+
+  & .container {
+    display: flex;
+
+    & .list {
+      margin-top: 2.6rem;
+    }
+  }
+
+  &__address {
+    width: 17rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 0.6;
+    color: $color-white;
+    margin-left: 12.5rem;
+  }
+
+  &__social {
+    margin-left: 29rem;
+  }
+
+  &__imgs {
+    margin-left: 14rem;
+    margin-bottom: 5rem;
+  }
+
+
+  &__img {
+    margin-right: 1.6rem;
+  }
+
+  &__rights {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: right;
+    opacity: 0.6;
+    
+  }
+}

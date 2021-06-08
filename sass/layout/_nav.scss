@@ -1,0 +1,7 @@
+.nav {
+  @extend %flexCenter;
+
+  &__logo {
+    margin-right: 8rem;
+  }
+}

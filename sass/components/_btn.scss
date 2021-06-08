@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-white;
+  margin-left: auto;
+
+  border: 2px solid $color-white;
+  border-radius: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding: 1rem 3.3rem;
+
+  &--light {
+    border: 2px solid $color-sacramento-green;
+    color: $color-sacramento-green;
+  }
+}
