@@ -5,6 +5,7 @@
 
   & .container {
     display: flex;
+    justify-content: space-between;
 
     & .list {
       margin-top: 2.6rem;
@@ -18,18 +19,17 @@
     line-height: 2.5rem;
     opacity: 0.6;
     color: $color-white;
-    margin-left: 12.5rem;
+    // margin-left: 12.5rem;
   }
 
-  &__social {
-    margin-left: 29rem;
-  }
+  // &__social {
+  //   margin-left: 29rem;
+  // }
 
   &__imgs {
     margin-left: 14rem;
     margin-bottom: 5rem;
   }
-
 
   &__img {
     margin-right: 1.6rem;
@@ -41,6 +41,5 @@
     line-height: 2.5rem;
     text-align: right;
     opacity: 0.6;
-    
   }
 }

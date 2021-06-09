@@ -82,14 +82,20 @@ body {
   padding-top: 14rem;
   padding-bottom: 14rem;
 
-  &__main {
+  & .container {
     display: flex;
     justify-content: space-between;
-    margin-top: 5.4rem;
   }
+
+  // &__main {
+  //   display: flex;
+  //   justify-content: space-between;
+  //
+  // }
 
   &__heading {
     width: 44.5rem;
+    margin-top: 5.4rem;
   }
 }
 
@@ -112,22 +118,26 @@ body {
     margin-bottom: 3.2rem;
   }
 
+  &:first-child {
+    margin-top: 5.4rem;
+  }
+
   &:first-child::before {
     @include baImages(72px, 72px, "../../images/team-1.png");
     margin-right: 2.3rem;
-    margin-left: 12.5rem;
+    // margin-left: 12.5rem;
   }
 
   &:nth-child(2)::before {
     @include baImages(72px, 72px, "../../images/team-2.png");
     margin-right: 2.3rem;
-    margin-left: 12.5rem;
+    // margin-left: 12.5rem;
   }
 
   &:last-child::before {
     @include baImages(72px, 72px, "../../images/team-3.png");
     margin-right: 2.3rem;
-    margin-left: 12.5rem;
+    // margin-left: 12.5rem;
   }
 }
 
@@ -172,22 +182,9 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 3rem;
 
       &::before {
         @include baImages(67px, 56px, "../images/article-img-1.png");
-      }
-
-      &:nth-child(1)::after {
-        @include baImages(62px, 62px, "../../images/person-1.png");
-      }
-
-      &:nth-child(2)::after {
-        @include baImages(62px, 62px, "../../images/person-2.png");
-      }
-
-      &:nth-child(3)::after {
-        @include baImages(62px, 62px, "../../images/person-3.png");
       }
     }
 
