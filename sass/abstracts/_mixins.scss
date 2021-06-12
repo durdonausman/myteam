@@ -13,6 +13,26 @@
   background-size: contain;
 }
 
+@mixin respond($breakpoint) {
+  @if $breakpoint == phones {
+    @media only screen and (max-width: 37.5em ) {@content};
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em ) {@content};
+  }
+
+  @if $breakpoint == tab-lend {
+    @media only screen and (max-width: 75em ) {@content};
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (max-width: 120em ) {@content};
+  }
+}
+  
+
+
 %flexCenter {
   display: flex;
   align-items: center;

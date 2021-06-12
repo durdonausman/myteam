@@ -390,7 +390,8 @@ template {
   padding: 1rem 3.3rem; }
   .btn--light {
     border: 2px solid #012F34;
-    color: #012F34; }
+    color: #012F34;
+    margin-left: 0; }
   .btn--submit {
     background-color: #fff;
     color: #004047;
