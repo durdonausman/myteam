@@ -1,0 +1,71 @@
+.contact {
+  padding-top: 7.3rem;
+  min-height: 78.9rem;
+  background-color: $color-midnight-green;
+
+  background-image: url(../../images/directors-img-1.png),
+    url(../../images/contact-img-1.png);
+  background-repeat: no-repeat;
+  background-size: 10rem 20rem, 9.3rem 20rem;
+  background-position: left 0 top 20.5rem, bottom 0 right 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+  }
+
+  &__main {
+    // margin-top: 7rem;
+
+    &-heading {
+      font-weight: bold;
+      font-size: 6.4rem;
+      line-height: 10rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    margin-top: 0;
+    color: $color-light-coral;
+  }
+
+}
+
+.team__members:first-child {
+  margin-top: 0;
+  margin-top: 3.2rem;
+}
+
+.team__members:nth-child(2) {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: $color-midnight-green;
+  width: 54rem;
+  border-bottom: 1px solid $color-white;
+  padding-bottom: 1.6rem;
+  padding-top: 2.4rem;
+  padding-right: 3rem;
+}
+
+input::placeholder {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.115385px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.input__message {
+  padding-bottom: 5.8rem;
+}

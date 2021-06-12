@@ -1,4 +1,4 @@
-.nav, .directors .container, .directors__cards-info, .clients .container, .clients__names {
+.nav, .directors .container, .directors__cards-info, .clients .container {
   display: flex;
   align-items: center; }
 
@@ -47,10 +47,11 @@ body {
   background-position: bottom 0 left 0;
   padding: 7.6rem 0; }
   .call-to-action .container {
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
   .call-to-action__heading {
     color: #012F34;
-    margin-left: 9rem; }
+    justify-content: space-around; }
 
 @font-face {
   font-family: 'Livvic';
@@ -382,6 +383,7 @@ template {
   color: #fff;
   margin-left: auto;
   border: 2px solid #fff;
+  font-weight: 600;
   border-radius: 2.4rem;
   font-size: 1.8rem;
   line-height: 2.8rem;
@@ -389,6 +391,12 @@ template {
   .btn--light {
     border: 2px solid #012F34;
     color: #012F34; }
+  .btn--submit {
+    background-color: #fff;
+    color: #004047;
+    outline: none;
+    border: none;
+    margin-top: 4.4rem; }
 
 .header {
   padding-top: 73px;
@@ -676,6 +684,60 @@ template {
     flex-direction: column;
     justify-content: center; }
   .clients__names {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin-top: 6.4rem; }
-    .clients__names-img {
-      margin-left: 7.9rem; }
+
+.contact {
+  padding-top: 7.3rem;
+  min-height: 78.9rem;
+  background-color: #014E56;
+  background-image: url(../../images/directors-img-1.png), url(../../images/contact-img-1.png);
+  background-repeat: no-repeat;
+  background-size: 10rem 20rem, 9.3rem 20rem;
+  background-position: left 0 top 20.5rem, bottom 0 right 0; }
+  .contact__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem; }
+  .contact__main-heading {
+    font-weight: bold;
+    font-size: 6.4rem;
+    line-height: 10rem;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .contact__text {
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    margin-top: 0;
+    color: #F67E7E; }
+
+.team__members:first-child {
+  margin-top: 0;
+  margin-top: 3.2rem; }
+
+.team__members:nth-child(2) {
+  margin-top: 8px;
+  margin-bottom: 8px; }
+
+input {
+  outline: none;
+  border: none;
+  background-color: #014E56;
+  width: 54rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1.6rem;
+  padding-top: 2.4rem;
+  padding-right: 3rem; }
+
+input::placeholder {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.115385px;
+  color: rgba(255, 255, 255, 0.4); }
+
+.input__message {
+  padding-bottom: 5.8rem; }

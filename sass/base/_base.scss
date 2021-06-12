@@ -53,10 +53,11 @@ body {
 
   & .container {
     display: flex;
+    justify-content: space-around;
   }
 
   &__heading {
     color: $color-sacramento-green;
-    margin-left: 9rem;
+    justify-content: space-around;
   }
 }
