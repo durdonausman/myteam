@@ -12,6 +12,10 @@
     }
   }
 
+  &__left {
+    display: flex;
+  }
+
   &__address {
     width: 17rem;
     font-weight: 600;

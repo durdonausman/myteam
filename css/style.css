@@ -419,6 +419,8 @@ template {
     justify-content: space-between; }
     .footer .container .list {
       margin-top: 2.6rem; }
+  .footer__left {
+    display: flex; }
   .footer__address {
     width: 17rem;
     font-weight: 600;
@@ -723,7 +725,8 @@ template {
   margin-top: 8px;
   margin-bottom: 8px; }
 
-input {
+input,
+textarea {
   outline: none;
   border: none;
   background-color: #014E56;
@@ -733,12 +736,17 @@ input {
   padding-top: 2.4rem;
   padding-right: 3rem; }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2.5rem;
   letter-spacing: -0.115385px;
   color: rgba(255, 255, 255, 0.4); }
+
+textarea {
+  resize: none;
+  overflow: hidden; }
 
 .input__message {
   padding-bottom: 5.8rem; }
