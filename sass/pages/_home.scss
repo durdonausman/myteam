@@ -4,6 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
   }
 
   &__heading {
@@ -12,6 +18,13 @@
     font-size: 10rem;
     line-height: 10rem;
     color: $color-white;
+
+    @include respond(tab-port) {
+      width: 50rem;
+      font-size: 6.4rem;
+      line-height: 5.6rem;
+      margin-bottom: 0;
+    }
 
     &--talent {
       color: $color-light-coral;
@@ -24,6 +37,12 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
     margin-top: 7rem;
+
+    @include respond(tab-port) {
+      margin-top: 0;
+      margin-top: 2.4rem;
+      width: 54.7rem;
+    }
   }
 }
 
@@ -35,12 +54,21 @@
   background-size: 10rem 24.4rem;
   background-position: right 0 bottom 0;
 
+  @include respond(tab-port) {
+    background-position: right 0 top 0;
+  }
+
   padding-top: 14rem;
   padding-bottom: 14rem;
 
   & .container {
     display: flex;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 
   // &__main {
@@ -52,6 +80,14 @@
   &__heading {
     width: 44.5rem;
     margin-top: 5.4rem;
+
+    @include respond(tab-port) {
+      width: 44.5rem;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      margin-top: 3.2rem;
+      margin-bottom: 6.4rem;
+    }
   }
 }
 
@@ -118,6 +154,12 @@
     width: 93.2rem;
     text-align: center;
 
+    @include respond(tab-port) {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      width: 47rem;
+    }
+
     &--green {
       color: $color-rapture-blue;
     }
@@ -128,10 +170,20 @@
     display: flex;
     justify-content: space-between;
 
+    @include respond(tab-port) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
     &-article {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include respond(tab-port) {
+        margin-bottom: 4.6rem;
+      }
 
       &::before {
         @include baImages(67px, 56px, "../images/article-img-1.png");

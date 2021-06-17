@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
 
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
     & .list {
       margin-top: 2.6rem;
     }
@@ -14,6 +18,10 @@
 
   &__left {
     display: flex;
+
+    @include respond(tab-port) {
+      justify-content: space-between;
+    }
   }
 
   &__address {
@@ -26,13 +34,21 @@
     // margin-left: 12.5rem;
   }
 
-  // &__social {
-  //   margin-left: 29rem;
-  // }
+  &__social {
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3.2rem;
+    }
+  }
 
   &__imgs {
     margin-left: 14rem;
     margin-bottom: 5rem;
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
   }
 
   &__img {

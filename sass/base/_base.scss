@@ -26,6 +26,11 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include respond(tab-port) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .line {
@@ -36,6 +41,10 @@ body {
 
   &--green {
     background-color: $color-rapture-blue;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
   &--coral {
     background-color: $color-light-coral;
@@ -50,6 +59,10 @@ body {
   background-size: 20rem 14.4rem;
   background-position: bottom 0 left 0;
   padding: 7.6rem 0;
+
+  @include respond(tab-port) {
+    background-size: 20rem 10rem;
+  }
 
   & .container {
     display: flex;

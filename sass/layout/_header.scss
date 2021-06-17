@@ -7,4 +7,10 @@
   background-repeat: no-repeat;
   background-size: 10rem 20rem, 35.8rem 10rem;
   background-position: 0 50%, right 16.5rem bottom 0%;
+
+  @include respond (tab-port) {
+    padding-top: 6.4rem;
+    background-image: none, url(../../images/hero-img-2.png);
+    background-position: center bottom;
+  }
 }
